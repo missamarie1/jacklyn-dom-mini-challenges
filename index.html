@@ -9,14 +9,34 @@
   </head>
   <body>
     <section class="vending-maching">
-      <p>Total: $0.00</p>
+      <p class="vending-total">Total: $0.00</p>
       <button class="vending cola">Lime Cola $2.00</button>
       <button class="vending peanuts">Salted Peanuts $3.00</button
       ><button class="vending chocolate">Chocolate Bar $4.00</button>
       <button class="vending gummies">Fruit Gummies $6.00</button>
     </section>
-    <section class="make-money"></section>
-    <section class="light-bulb"></section>
+    <section>
+      <form class="make-money">
+        <label for="number">How many?</label>
+        <input type="text" id="number" />
+        <label for="type">Which Coin?</label>
+        <select name="type" id="type">
+          <option value="penny">Penny</option>
+          <option value="nickel">Nickel</option>
+          <option value="dime">Dime</option>
+          <option value="quarter">Quarter</option>
+        </select>
+        <button>Make Money</button>
+      </form>
+      <div class="coin-container"></div>
+    </section>
+    <section>
+      <div class="light-bulb"><p>Light Bulb</p></div>
+      <button class="button on">On</button>
+      <button class="button off">Off</button>
+      <button class="button toggle">Toggle</button>
+      <button class="button end">End</button>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
